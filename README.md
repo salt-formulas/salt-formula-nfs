@@ -1,11 +1,5 @@
 
-# Linux Operating Systems
-
-* Ubuntu - Ubuntu is the world’s favourite free operating system, with more than 20 million people preferring it to commercial alternatives.
-* CentOS
-* RedHat
-* Fedora
-* Arch - Arch Linux is a lightweight and flexible Linux distribution that tries to Keep It Simple.
+# NFS Network File System
 
 ## Sample pillars
 
