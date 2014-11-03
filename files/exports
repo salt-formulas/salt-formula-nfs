@@ -1,0 +1,7 @@
+{%- from "nfs/map.jinja" import server with context %}
+
+{%- for name_dir, dir in server.share.iteritems() %}
+{%- for host_name, host in dir.host.iteritems() %}
+{{ dir.path }} {{ host.host }}({{ ",".join(host.params)}})
+{%- endfor %}
+{%- endfor %}

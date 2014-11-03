@@ -1,0 +1,16 @@
+
+{% set client = salt['grains.filter_by']({
+    'Debian': {
+    	'pkgs': ["portmap", "nfs-common"],
+        'services': ['portmap', 'nfs-common'],
+    },
+
+}, merge=salt['pillar.get']('nfs:client')) %}
+
+{% set server = salt['grains.filter_by']({
+    'Debian': {
+    	'pkgs': ["nfs-kernel-server", "portmap", "nfs-common"],
+        'nfs_service': "nfs-kernel-server",
+        'portmap_service': 'portmap',
+    },
+}, merge=salt['pillar.get']('nfs:server')) %}
