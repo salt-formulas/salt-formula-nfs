@@ -25,8 +25,7 @@ Basic NFS sharing
                 params:
                 - rw
                 - no_root_squash
-                - sync   
-
+                - sync
 
 ### NFS Client with mounted directory
 
@@ -38,6 +37,8 @@ Basic NFS sharing
             path: /media/myuser/public/
             fstype: nfs
             host: //192.168.0.1/storage
+
+note: this formula enforce mount path if not exist !
 
 linux.storage formula is recommended
 
