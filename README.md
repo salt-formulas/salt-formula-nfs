@@ -42,6 +42,10 @@ note: this formula enforce mount path if not exist !
 
 linux.storage formula is recommended
 
+## Supported OS
+
+* Ubuntu 14.04
+
 ## Read more
 
 * http://wiki.ubuntu.cz/nfs
