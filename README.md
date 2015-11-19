@@ -13,7 +13,7 @@ Basic NFS sharing
         share:
           home_majklk:
             path: /home/majklk
-            host: 
+            host:
               inter:
                 host: 10.10.10.0/24
                 params:

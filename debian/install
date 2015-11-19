@@ -1,0 +1,2 @@
+nfs/*             /usr/share/salt-formulas/env/nfs/
+metadata/service/*      /usr/share/salt-formulas/reclass/service/nfs/

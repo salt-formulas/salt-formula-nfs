@@ -1,0 +1,5 @@
+salt-formula-nfs (0.2) trusty; urgency=medium
+
+  * First public release
+
+ -- Filip Pytloun <filip.pytloun@tcpcloud.eu>  Tue, 19 Nov 2015 17:01:49 +0200

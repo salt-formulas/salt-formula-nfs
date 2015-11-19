@@ -1,0 +1,6 @@
+applications:
+- nfs
+parameters:
+  nfs:
+    server:
+      enabled: true

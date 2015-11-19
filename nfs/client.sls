@@ -10,11 +10,7 @@ nfs_client_packages:
 {{ mount.path|replace("/","_") }}_directory:
   file.directory:
   - name: {{ mount.path }}
-  - user: root
-  - group: root
-  - mode: 755
   - makedirs: True
-  - unless: test -e {{ mount.path }}
   - require:
     - pkg: nfs_client_packages
 
