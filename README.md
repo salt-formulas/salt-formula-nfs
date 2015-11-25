@@ -40,15 +40,15 @@ Basic NFS sharing
 
 ## NFS mount
 
-parameters:
-  linux:
-    storage:
-      mount:
-        nfs:
-          enabled: true
-          path: /var/lib/glance
-          file_system: nfs
-          device: 10.0.103.152:/storage/glance/vpc20
+    parameters:
+      linux:
+        storage:
+         mount:
+            nfs:
+              enabled: true
+              path: /var/lib/glance
+              file_system: nfs
+              device: 10.0.103.152:/storage/glance/vpc20
 
 note: this formula enforce mount path if not exist !
 
