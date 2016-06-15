@@ -1,0 +1,8 @@
+name: nfs
+os: Debian
+os_family: Debian
+version: 201606
+release: 1
+summary: NFS salt formula
+description: Install and configure NFS client and server.
+top_level_dir: nfs
