@@ -1,11 +1,14 @@
 
-# NFS Network File System
+===========
+NFS Formula
+===========
 
-## Sample pillars
+Sample Pillars
+==============
 
-### NFS Server
+NFS Server: Basic sharing
 
-Basic NFS sharing
+.. code-block:: yaml
 
     nfs:
       server:
@@ -27,7 +30,9 @@ Basic NFS sharing
                 - no_root_squash
                 - sync
 
-### NFS Client with mounted directory
+NFS Client with mounted directory
+
+.. code-block:: yaml
 
     nfs:
       client:
@@ -38,26 +43,20 @@ Basic NFS sharing
             fstype: nfs
             host: //192.168.0.1/storage
 
-## NFS mount
+NFS mount
 
-    parameters:
-      linux:
-        storage:
-         mount:
-            nfs:
-              enabled: true
-              path: /var/lib/glance
-              file_system: nfs
-              device: 10.0.103.152:/storage/glance/vpc20
+.. code-block:: yaml
 
-note: this formula enforce mount path if not exist !
+    linux:
+      storage:
+       mount:
+          nfs:
+            enabled: true
+            path: /var/lib/glance
+            file_system: nfs
+            device: 10.0.103.152:/storage/glance/vpc20
 
-linux.storage formula is recommended
-
-## Supported OS
-
-* Ubuntu 14.04
-
-## Read more
+More Information
+================
 
 * http://wiki.ubuntu.cz/nfs
