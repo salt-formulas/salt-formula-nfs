@@ -2,7 +2,7 @@
 {%- if client.enabled %}
 
 nfs_client_packages:
-  pkg.installed: 
+  pkg.installed:
   - names: {{ client.pkgs }}
 
 {%- for mount_name, mount in client.mount.iteritems() %}
@@ -14,8 +14,9 @@ nfs_client_packages:
   - require:
     - pkg: nfs_client_packages
 
-{{ mount.path }}:
+{{ mount.path|replace("/","_") }}_nfs_mount:
   mount.mounted:
+    - name: {{ mount.path }}
     - device: {{ mount.device }}
     - fstype: {{ mount.fstype }}
     - require:
