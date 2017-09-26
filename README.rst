@@ -41,7 +41,7 @@ NFS Client with mounted directory
           samba1:
             path: /media/myuser/public/
             fstype: nfs
-            host: //192.168.0.1/storage
+            device: 192.168.0.1:/home/majklk
 
 NFS mount
 
@@ -49,7 +49,7 @@ NFS mount
 
     linux:
       storage:
-       mount:
+        mount:
           nfs:
             enabled: true
             path: /var/lib/glance
