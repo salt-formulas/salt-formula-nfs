@@ -10,6 +10,6 @@ Vcs-Git: https://github.com/tcpcloud/salt-formula-nfs.git
 
 Package: salt-formula-nfs
 Architecture: all
-Depends: ${misc:Depends}, salt-master, reclass
+Depends: ${misc:Depends}
 Description: NFS salt formula
  Install and configure NFS client and server.
