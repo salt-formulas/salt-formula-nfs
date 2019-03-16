@@ -42,6 +42,8 @@ NFS Client with mounted directory
             path: /media/myuser/public/
             fstype: nfs
             device: 192.168.0.1:/home/majklk
+            opts: "ro,user"
+
 
 NFS mount
 
