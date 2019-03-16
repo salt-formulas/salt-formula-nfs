@@ -19,6 +19,7 @@ nfs_client_packages:
     - name: {{ mount.path }}
     - device: {{ mount.device }}
     - fstype: {{ mount.fstype }}
+    - opts: {{ mount.opts }}
     - require:
       - file: {{ mount.path|replace("/","_") }}_directory
 {%- endfor %}
